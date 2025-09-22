@@ -4,6 +4,9 @@
   "description": "Control .env files",
   "type": "module",
   "main": "./src/index.js",
+  "bin": {
+    "envctl": "./src/index.js"
+  },
   "scripts": {
     "start": "node ./src/index.js",
     "lint": "eslint src/**/*.js",
@@ -18,5 +21,8 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "commander": "^14.0.1"
   }
 }
